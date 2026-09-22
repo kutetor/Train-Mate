@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Squat",
+        "type": "strength",
+        "level": "beginner",
+        "muscle": "Legs",
+        "description": "A lower-body exercise that builds strength in the legs."
+    },
+    {
+        "name": "Chest Press",
+        "type": "strength",
+        "level": "beginner",
+        "muscle": "Chest",
+        "description": "A pressing exercise that mainly targets the chest muscles."
+    },
+    {
+        "name": "Lat Pulldown",
+        "type": "strength",
+        "level": "beginner",
+        "muscle": "Back",
+        "description": "A pulling exercise that mainly trains the back muscles."
+    },
+    {
+        "name": "Shoulder Press",
+        "type": "strength",
+        "level": "intermediate",
+        "muscle": "Shoulders",
+        "description": "A pressing exercise that targets the shoulder muscles."
+    },
+    {
+        "name": "Cable Crunch",
+        "type": "strength",
+        "level": "intermediate",
+        "muscle": "Core",
+        "description": "A cable exercise that trains the abdominal muscles."
+    },
+    {
+        "name": "Pull-Up",
+        "type": "strength",
+        "level": "advanced",
+        "muscle": "Back",
+        "description": "A bodyweight pulling exercise that trains the back and arms."
+    },
+    {
+        "name": "Barbell Deadlift",
+        "type": "strength",
+        "level": "advanced",
+        "muscle": "Full Body",
+        "description": "A compound strength exercise that trains several major muscle groups."
+    },
+    {
+        "name": "Treadmill",
+        "type": "cardio",
+        "level": "beginner",
+        "muscle": "Cardio",
+        "description": "A simple cardio exercise for walking, jogging, or running."
+    },
+    {
+        "name": "Exercise Bike",
+        "type": "cardio",
+        "level": "beginner",
+        "muscle": "Lower Body",
+        "description": "A low-impact cardio exercise performed on a stationary bike."
+    },
+    {
+        "name": "Rowing Machine",
+        "type": "cardio",
+        "level": "intermediate",
+        "muscle": "Full Body",
+        "description": "A cardio exercise that uses both the upper and lower body."
+    },
+    {
+        "name": "Stair Climber",
+        "type": "cardio",
+        "level": "intermediate",
+        "muscle": "Lower Body",
+        "description": "A cardio exercise that simulates climbing stairs."
+    },
+    {
+        "name": "Elliptical",
+        "type": "cardio",
+        "level": "beginner",
+        "muscle": "Full Body",
+        "description": "A low-impact cardio exercise that uses both the arms and legs."
+    }
+]
