@@ -24,11 +24,23 @@ window.onload = function() {
 
             // Add exercise information to the card
             card.innerHTML = `
-                <h3>${exercise.name}</h3>
-                <p class="exercise-meta">
-                    ${exercise.type} · ${exercise.level} · ${exercise.muscle}
-                </p>
-                <p>${exercise.description}</p>
+                <div class="exercise-image-wrapper">
+                    <img
+                        src="${exercise.image}"
+                        alt="${exercise.name}"
+                        class="exercise-image"
+                    >
+                </div>
+
+                <div class="exercise-card-content">
+                    <h3>${exercise.name}</h3>
+
+                    <p class="exercise-meta">
+                        ${exercise.type} · ${exercise.level} · ${exercise.muscle}
+                    </p>
+
+                    <p>${exercise.description}</p>
+                </div>
             `;
 
             // Add the card to the exercise grid
@@ -37,6 +49,7 @@ window.onload = function() {
         });
 
     }
+
 
     // Load exercise data from the JSON file
     fetch("data/exercises.json")

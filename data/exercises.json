@@ -4,6 +4,7 @@
         "type": "strength",
         "level": "beginner",
         "muscle": "Legs",
+        "image": "images/exercises/squat.jpg",
         "description": "A lower-body exercise that builds strength in the legs."
     },
     {
@@ -11,6 +12,7 @@
         "type": "strength",
         "level": "beginner",
         "muscle": "Chest",
+        "image": "images/exercises/chest-press.gif",
         "description": "A pressing exercise that mainly targets the chest muscles."
     },
     {
@@ -18,6 +20,7 @@
         "type": "strength",
         "level": "beginner",
         "muscle": "Back",
+        "image": "images/exercises/lat-pulldown.jpg",
         "description": "A pulling exercise that mainly trains the back muscles."
     },
     {
@@ -25,6 +28,7 @@
         "type": "strength",
         "level": "intermediate",
         "muscle": "Shoulders",
+        "image": "images/exercises/shoulder-press.jpg",
         "description": "A pressing exercise that targets the shoulder muscles."
     },
     {
@@ -32,13 +36,23 @@
         "type": "strength",
         "level": "intermediate",
         "muscle": "Core",
+        "image": "images/exercises/cable-crunch.jpg",
         "description": "A cable exercise that trains the abdominal muscles."
+    },
+    {
+        "name": "Romanian Deadlift",
+        "type": "strength",
+        "level": "intermediate",
+        "muscle": "Legs",
+        "image": "images/exercises/romanian-deadlift.jpg",
+        "description": "A strength exercise that mainly trains the hamstrings and glutes."
     },
     {
         "name": "Pull-Up",
         "type": "strength",
         "level": "advanced",
         "muscle": "Back",
+        "image": "images/exercises/pull-up.jpg",
         "description": "A bodyweight pulling exercise that trains the back and arms."
     },
     {
@@ -46,6 +60,7 @@
         "type": "strength",
         "level": "advanced",
         "muscle": "Full Body",
+        "image": "images/exercises/barbell-deadlift.jpg",
         "description": "A compound strength exercise that trains several major muscle groups."
     },
     {
@@ -53,6 +68,7 @@
         "type": "cardio",
         "level": "beginner",
         "muscle": "Cardio",
+        "image": "images/exercises/treadmill.jpg",
         "description": "A simple cardio exercise for walking, jogging, or running."
     },
     {
@@ -60,13 +76,23 @@
         "type": "cardio",
         "level": "beginner",
         "muscle": "Lower Body",
+        "image": "images/exercises/exercise-bike.jpg",
         "description": "A low-impact cardio exercise performed on a stationary bike."
+    },
+    {
+        "name": "Walking",
+        "type": "cardio",
+        "level": "beginner",
+        "muscle": "Lower Body",
+        "image": "images/exercises/walking.jpg",
+        "description": "A simple low-impact cardio activity suitable for beginners."
     },
     {
         "name": "Rowing Machine",
         "type": "cardio",
         "level": "intermediate",
         "muscle": "Full Body",
+        "image": "images/exercises/rowing-machine.jpg",
         "description": "A cardio exercise that uses both the upper and lower body."
     },
     {
@@ -74,6 +100,7 @@
         "type": "cardio",
         "level": "intermediate",
         "muscle": "Lower Body",
+        "image": "images/exercises/stair-climber.jpg",
         "description": "A cardio exercise that simulates climbing stairs."
     },
     {
@@ -81,6 +108,15 @@
         "type": "cardio",
         "level": "beginner",
         "muscle": "Full Body",
+        "image": "images/exercises/elliptical.jpg",
         "description": "A low-impact cardio exercise that uses both the arms and legs."
+    },
+    {
+        "name": "Running Intervals",
+        "type": "cardio",
+        "level": "advanced",
+        "muscle": "Cardio",
+        "image": "images/exercises/running-intervals.jpg",
+        "description": "A cardio exercise that alternates between faster and slower running periods."
     }
 ]
