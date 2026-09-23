@@ -1,0 +1,197 @@
+/* ----- Exercise hero ----- */
+
+.exercise-intro {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("../images/general/hero-exercises.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+}
+
+.exercise-intro > div {
+    width: 100%;
+    max-width: 750px;
+}
+
+.exercise-intro h1 {
+    margin-bottom: 0.75rem;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.exercise-intro p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #e4e4e7;
+    font-size: 1.1rem;
+}
+
+/* ----- Exercise controls ----- */
+
+.exercise-controls {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.search-box {
+    flex: 2;
+}
+
+.filters {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+}
+
+.filter-group {
+    flex: 1;
+}
+
+.search-box label,
+.filter-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.search-box input,
+.filter-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    color: #1f2937;
+    font: inherit;
+}
+
+.search-box input:focus,
+.filter-group select:focus {
+    outline: 2px solid #ca8a04;
+    outline-offset: 2px;
+}
+
+/* ----- Exercise library ----- */
+
+.exercise-library {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.exercise-library > h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* ----- Exercise cards ----- */
+
+.exercise-card {
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    border-top: 4px solid #facc15;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exercise-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.exercise-image-wrapper {
+    height: 220px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.exercise-image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.exercise-card-content {
+    padding: 1.5rem;
+}
+
+.exercise-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.exercise-card .exercise-meta {
+    margin-bottom: 1rem;
+    color: #ca8a04;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.exercise-card-content > p:last-child {
+    color: #6b7280;
+}
+
+/* ----- Responsive design ----- */
+
+@media (max-width: 900px) {
+
+    .exercise-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box,
+    .filters {
+        width: 100%;
+    }
+
+    .exercise-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .exercise-intro {
+        min-height: 240px;
+    }
+
+    .exercise-intro h1 {
+        font-size: 2.25rem;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .exercise-grid {
+        grid-template-columns: 1fr;
+    }
+}

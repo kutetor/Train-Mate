@@ -1,0 +1,169 @@
+/* ----- About hero ----- */
+
+.about-intro {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("../images/general/hero-about.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+}
+
+.about-intro > div {
+    width: 100%;
+    max-width: 750px;
+}
+
+.about-intro h1 {
+    margin-bottom: 0.75rem;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.about-intro p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #e4e4e7;
+    font-size: 1.1rem;
+}
+
+/* ----- Our purpose ----- */
+
+.about-purpose {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-purpose h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.about-purpose p {
+    color: #6b7280;
+}
+
+/* ----- Features ----- */
+
+.about-features {
+    background-color: #f8fafc;
+    text-align: center;
+}
+
+.about-features > h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.feature-cards {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.feature-card {
+    flex: 1;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    border-top: 4px solid #facc15;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.feature-card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.feature-card p {
+    margin-bottom: 1.5rem;
+    color: #6b7280;
+}
+
+/* ----- Workout generator ----- */
+
+.generator-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.generator-info > h2 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.generator-info > p {
+    margin-bottom: 2.5rem;
+    color: #6b7280;
+}
+
+.generator-steps {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.generator-step {
+    flex: 1;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.generator-step h3 {
+    margin-bottom: 0.75rem;
+}
+
+.generator-step p {
+    color: #6b7280;
+}
+
+/* ----- Call to action ----- */
+
+.about-cta {
+    background-color: #18181b;
+    color: #ffffff;
+    text-align: center;
+}
+
+.about-cta h2 {
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+}
+
+.about-cta p {
+    margin-bottom: 1.5rem;
+    color: #d4d4d8;
+}
+
+/* ----- Responsive design ----- */
+
+@media (max-width: 768px) {
+
+    .about-intro {
+        min-height: 240px;
+    }
+
+    .about-intro h1 {
+        font-size: 2.25rem;
+    }
+
+    .feature-cards,
+    .generator-steps {
+        flex-direction: column;
+    }
+}

@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Exercises | Train Mate</title>
+    <title>Exercises | Training Mate</title>
 
     <meta
         name="description"
-        content="Explore strength and cardio exercises for different experience levels with Train Mate."
+        content="Explore strength and cardio exercises for different experience levels with Training Mate."
     >
 
     <!-- CSS -->
@@ -24,12 +24,12 @@
 
     <!-- Header -->
     <header>
-
-        <!-- Navigation -->
         <nav class="navbar">
 
             <!-- Logo -->
-            <a href="index.html" class="logo">Train Mate</a>
+            <a href="index.html" class="logo">
+                <img src="images/general/logo.png" alt="Training Mate">
+            </a>
 
             <!-- Navigation links -->
             <ul class="nav-links">
@@ -42,22 +42,20 @@
             <a href="workout.html" class="btn">Build Workout</a>
 
         </nav>
-
     </header>
 
     <!-- Main content -->
     <main>
 
-        <!-- Exercise library introduction -->
+        <!-- Exercise hero -->
         <section class="exercise-intro">
-
-            <h1>Exercise Library</h1>
-
-            <p>
-                Explore strength and cardio exercises and find exercises
-                that match your experience level.
-            </p>
-
+            <div>
+                <h1>Exercise Library</h1>
+                <p>
+                    Explore strength and cardio exercises and find exercises
+                    that match your experience level.
+                </p>
+            </div>
         </section>
 
         <!-- Exercise controls -->
@@ -65,8 +63,7 @@
 
             <!-- Search -->
             <div class="search-box">
-                <label for="exercise-search">Search exercises</label>
-
+                <label for="exercise-search">Search Exercises</label>
                 <input
                     type="search"
                     id="exercise-search"
@@ -80,7 +77,6 @@
                 <!-- Type filter -->
                 <div class="filter-group">
                     <label for="type-filter">Type</label>
-
                     <select id="type-filter">
                         <option value="all">All</option>
                         <option value="strength">Strength</option>
@@ -91,7 +87,6 @@
                 <!-- Level filter -->
                 <div class="filter-group">
                     <label for="level-filter">Experience Level</label>
-
                     <select id="level-filter">
                         <option value="all">All</option>
                         <option value="beginner">Beginner</option>
@@ -101,7 +96,6 @@
                 </div>
 
             </div>
-
         </section>
 
         <!-- Exercise library -->
@@ -110,9 +104,7 @@
             <h2>Exercises</h2>
 
             <!-- Exercise cards are generated with JavaScript -->
-            <div id="exercise-grid" class="exercise-grid">
-
-            </div>
+            <div id="exercise-grid" class="exercise-grid"></div>
 
         </section>
 
@@ -120,17 +112,14 @@
 
     <!-- Footer -->
     <footer>
+        <p>&copy; 2026 Training Mate</p>
 
-        <p>&copy; 2026 Train Mate</p>
-
-        <!-- Footer navigation -->
         <nav class="footer-nav">
             <a href="index.html">Home</a>
             <a href="exercises.html">Exercises</a>
             <a href="about.html">About</a>
             <a href="workout.html">Build Workout</a>
         </nav>
-
     </footer>
 
 </body>

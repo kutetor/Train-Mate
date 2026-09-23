@@ -4,7 +4,7 @@
         "type": "strength",
         "level": "beginner",
         "muscle": "Legs",
-        "image": "images/exercises/squat.jpg",
+        "image": "images/exercises/squat.gif",
         "description": "A lower-body exercise that builds strength in the legs."
     },
     {
@@ -20,7 +20,7 @@
         "type": "strength",
         "level": "beginner",
         "muscle": "Back",
-        "image": "images/exercises/lat-pulldown.jpg",
+        "image": "images/exercises/lat-pulldown.gif",
         "description": "A pulling exercise that mainly trains the back muscles."
     },
     {
@@ -28,7 +28,7 @@
         "type": "strength",
         "level": "intermediate",
         "muscle": "Shoulders",
-        "image": "images/exercises/shoulder-press.jpg",
+        "image": "images/exercises/shoulder-press.gif",
         "description": "A pressing exercise that targets the shoulder muscles."
     },
     {
@@ -36,7 +36,7 @@
         "type": "strength",
         "level": "intermediate",
         "muscle": "Core",
-        "image": "images/exercises/cable-crunch.jpg",
+        "image": "images/exercises/cable-crunch.gif",
         "description": "A cable exercise that trains the abdominal muscles."
     },
     {
@@ -44,7 +44,7 @@
         "type": "strength",
         "level": "intermediate",
         "muscle": "Legs",
-        "image": "images/exercises/romanian-deadlift.jpg",
+        "image": "images/exercises/romanian-deadlift.gif",
         "description": "A strength exercise that mainly trains the hamstrings and glutes."
     },
     {
@@ -52,7 +52,7 @@
         "type": "strength",
         "level": "advanced",
         "muscle": "Back",
-        "image": "images/exercises/pull-up.jpg",
+        "image": "images/exercises/pull-up.gif",
         "description": "A bodyweight pulling exercise that trains the back and arms."
     },
     {
@@ -60,7 +60,7 @@
         "type": "strength",
         "level": "advanced",
         "muscle": "Full Body",
-        "image": "images/exercises/barbell-deadlift.jpg",
+        "image": "images/exercises/barbell-deadlift.gif",
         "description": "A compound strength exercise that trains several major muscle groups."
     },
     {
@@ -68,7 +68,7 @@
         "type": "cardio",
         "level": "beginner",
         "muscle": "Cardio",
-        "image": "images/exercises/treadmill.jpg",
+        "image": "images/exercises/treadmill.gif",
         "description": "A simple cardio exercise for walking, jogging, or running."
     },
     {
@@ -76,7 +76,7 @@
         "type": "cardio",
         "level": "beginner",
         "muscle": "Lower Body",
-        "image": "images/exercises/exercise-bike.jpg",
+        "image": "images/exercises/exercise-bike.gif",
         "description": "A low-impact cardio exercise performed on a stationary bike."
     },
     {
@@ -84,7 +84,7 @@
         "type": "cardio",
         "level": "beginner",
         "muscle": "Lower Body",
-        "image": "images/exercises/walking.jpg",
+        "image": "images/exercises/walking.gif",
         "description": "A simple low-impact cardio activity suitable for beginners."
     },
     {
@@ -92,7 +92,7 @@
         "type": "cardio",
         "level": "intermediate",
         "muscle": "Full Body",
-        "image": "images/exercises/rowing-machine.jpg",
+        "image": "images/exercises/rowing-machine.gif",
         "description": "A cardio exercise that uses both the upper and lower body."
     },
     {
@@ -100,7 +100,7 @@
         "type": "cardio",
         "level": "intermediate",
         "muscle": "Lower Body",
-        "image": "images/exercises/stair-climber.jpg",
+        "image": "images/exercises/stair-climber.gif",
         "description": "A cardio exercise that simulates climbing stairs."
     },
     {
@@ -108,7 +108,7 @@
         "type": "cardio",
         "level": "beginner",
         "muscle": "Full Body",
-        "image": "images/exercises/elliptical.jpg",
+        "image": "images/exercises/elliptical.gif",
         "description": "A low-impact cardio exercise that uses both the arms and legs."
     },
     {
@@ -116,7 +116,7 @@
         "type": "cardio",
         "level": "advanced",
         "muscle": "Cardio",
-        "image": "images/exercises/running-intervals.jpg",
+        "image": "images/exercises/running-intervals.gif",
         "description": "A cardio exercise that alternates between faster and slower running periods."
     }
 ]

@@ -1,19 +1,36 @@
 window.onload = function() {
 
-    // Find the workout form
+    // Find the workout form and workout result area
     var workoutForm = document.getElementById("workout-form");
+    var workoutContent = document.getElementById("workout-content");
+
+    // Store exercise data from the JSON file
+    var exerciseData = [];
+
+    // Load exercise data
+    fetch("data/exercises.json")
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(exercises) {
+            exerciseData = exercises;
+        });
+
+    // Find exercise information by name
+    function findExercise(exerciseName) {
+        return exerciseData.find(function(exercise) {
+            return exercise.name === exerciseName;
+        });
+    }
 
     // Listen for form submission
     workoutForm.addEventListener("submit", function(event) {
 
-        // Prevent the form from reloading the page
+        // Prevent the page from reloading
         event.preventDefault();
 
-        // Get values from the form
+        // Get values used to create the workout
         var name = document.getElementById("name").value;
-        var age = document.getElementById("age").value;
-        var weight = document.getElementById("weight").value;
-        var height = document.getElementById("height").value;
         var goal = document.getElementById("goal").value;
         var experience = document.getElementById("experience").value;
         var duration = document.getElementById("duration").value;
@@ -21,170 +38,116 @@ window.onload = function() {
         // Create an empty workout
         var workout = [];
 
-        // Select a base workout based on the training goal
+        // Select exercises based on the training goal
         if (goal === "build-muscle") {
-
             workout = [
                 { name: "Squat" },
                 { name: "Chest Press" },
                 { name: "Lat Pulldown" },
                 { name: "Shoulder Press" }
             ];
-
-        } else if (goal === "lose-fat") {
-
+        } else {
             workout = [
                 { name: "Treadmill" },
                 { name: "Exercise Bike" },
                 { name: "Elliptical" },
                 { name: "Rowing Machine" }
             ];
-
         }
 
-        // Add an exercise based on experience level
+        // Add one exercise based on experience level
         if (goal === "build-muscle") {
-
             if (experience === "beginner") {
                 workout.push({ name: "Cable Crunch" });
-
             } else if (experience === "intermediate") {
                 workout.push({ name: "Romanian Deadlift" });
-
-            } else if (experience === "advanced") {
+            } else {
                 workout.push({ name: "Barbell Deadlift" });
             }
-
-        } else if (goal === "lose-fat") {
-
+        } else {
             if (experience === "beginner") {
                 workout.push({ name: "Walking" });
-
             } else if (experience === "intermediate") {
                 workout.push({ name: "Stair Climber" });
-
-            } else if (experience === "advanced") {
+            } else {
                 workout.push({ name: "Running Intervals" });
             }
-
         }
 
-        // Variables for workout volume
+        // Set workout volume based on duration
         var sets = 0;
         var reps = 10;
         var cardioMinutes = 0;
 
-        // Set workout volume based on duration
         if (goal === "build-muscle") {
-
             if (duration === "30") {
                 sets = 2;
             } else if (duration === "45") {
                 sets = 3;
-            } else if (duration === "60") {
+            } else {
                 sets = 4;
             }
-
-        } else if (goal === "lose-fat") {
-
+        } else {
             if (duration === "30") {
                 cardioMinutes = 6;
             } else if (duration === "45") {
                 cardioMinutes = 9;
-            } else if (duration === "60") {
+            } else {
                 cardioMinutes = 12;
             }
-
         }
 
-        // Add workout details to each exercise
-        if (goal === "build-muscle") {
+        // Create readable text for the workout summary
+        var goalText = goal === "build-muscle" ? "Build Muscle" : "Lose Fat";
 
-            workout.forEach(function(exercise) {
-                exercise.sets = sets;
-                exercise.reps = reps;
-            });
-
-        } else if (goal === "lose-fat") {
-
-            workout.forEach(function(exercise) {
-                exercise.minutes = cardioMinutes;
-            });
-
-        }
-
-        // Find the workout content area
-        var workoutContent = document.getElementById("workout-content");
+        var experienceText =
+            experience.charAt(0).toUpperCase() + experience.slice(1);
 
         // Clear the previous workout
         workoutContent.innerHTML = "";
 
-        // Create readable goal text
-        var goalText = "";
-
-        if (goal === "build-muscle") {
-            goalText = "Build Muscle";
-        } else if (goal === "lose-fat") {
-            goalText = "Lose Fat";
-        }
-
-        // Create readable experience text
-        var experienceText = "";
-
-        if (experience === "beginner") {
-            experienceText = "Beginner";
-        } else if (experience === "intermediate") {
-            experienceText = "Intermediate";
-        } else if (experience === "advanced") {
-            experienceText = "Advanced";
-        }
-
-        // Create the workout title
-        var workoutTitle = document.createElement("h3");
-        workoutTitle.textContent = name + "'s Workout";
-        workoutContent.appendChild(workoutTitle);
-
-        // Create the workout summary
-        var workoutSummary = document.createElement("p");
-        workoutSummary.textContent =
-            goalText + " · " + experienceText + " · " + duration + " minutes";
-
-        workoutContent.appendChild(workoutSummary);
+        // Display workout title and summary
+        workoutContent.innerHTML = `
+            <h3>${name}'s Workout</h3>
+            <p>${goalText} · ${experienceText} · ${duration} minutes</p>
+        `;
 
         // Display each exercise
         workout.forEach(function(exercise) {
 
-            // Create an exercise card
+            // Find the exercise image from JSON
+            var exerciseInfo = findExercise(exercise.name);
+            var image = "";
+
+            if (exerciseInfo) {
+                image = exerciseInfo.image;
+            }
+
+            // Create exercise details
+            var details = "";
+
+            if (goal === "build-muscle") {
+                details = sets + " sets × " + reps + " reps";
+            } else {
+                details = cardioMinutes + " minutes";
+            }
+
+            // Create and display the workout card
             var exerciseCard = document.createElement("article");
             exerciseCard.className = "workout-card";
 
-            // Create the exercise name
-            var exerciseName = document.createElement("h4");
-            exerciseName.textContent = exercise.name;
-            exerciseCard.appendChild(exerciseName);
+            exerciseCard.innerHTML = `
+                <div class="workout-image-wrapper">
+                    <img src="${image}" alt="${exercise.name}" class="workout-image">
+                </div>
 
-            // Create exercise details
-            var exerciseDetails = document.createElement("p");
+                <div class="workout-card-content">
+                    <h4>${exercise.name}</h4>
+                    <p>${details}</p>
+                </div>
+            `;
 
-            if (goal === "build-muscle") {
-
-                exerciseDetails.textContent =
-                    exercise.sets + " sets × " + exercise.reps + " reps";
-
-            } else if (goal === "lose-fat") {
-
-                exerciseDetails.textContent =
-                    exercise.minutes + " minutes";
-
-            }
-
-            exerciseCard.appendChild(exerciseDetails);
-
-            // Add the exercise card to the page
             workoutContent.appendChild(exerciseCard);
-
         });
-
     });
-
 };
