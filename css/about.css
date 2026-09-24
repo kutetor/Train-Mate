@@ -16,6 +16,7 @@
     background-repeat: no-repeat;
     color: #ffffff;
     text-align: center;
+    
 }
 
 .about-intro > div {
@@ -26,13 +27,15 @@
 .about-intro h1 {
     margin-bottom: 0.75rem;
     font-size: 3rem;
+    color: goldenrod;
     line-height: 1.2;
+    text-shadow: 2px 2px 4px black;
 }
 
 .about-intro p {
     max-width: 650px;
     margin: 0 auto;
-    color: #e4e4e7;
+    color: azure;
     font-size: 1.1rem;
 }
 
@@ -47,10 +50,11 @@
 .about-purpose h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
+    text-shadow: 2px 2px 4px goldenrod;
 }
 
 .about-purpose p {
-    color: #6b7280;
+    color: #303031;
 }
 
 /* ----- Features ----- */
@@ -63,6 +67,7 @@
 .about-features > h2 {
     margin-bottom: 2rem;
     font-size: 2rem;
+    text-shadow: 2px 2px 4px goldenrod;
 }
 
 .feature-cards {
@@ -85,11 +90,12 @@
 .feature-card h3 {
     margin-bottom: 0.75rem;
     font-size: 1.25rem;
+    text-shadow: 2px 2px 4px goldenrod;
 }
 
 .feature-card p {
     margin-bottom: 1.5rem;
-    color: #6b7280;
+    color: rgb(38, 38, 38);
 }
 
 /* ----- Workout generator ----- */
@@ -103,11 +109,13 @@
 .generator-info > h2 {
     margin-bottom: 0.5rem;
     font-size: 2rem;
+    text-shadow: 2px 2px 4px goldenrod;
 }
 
 .generator-info > p {
+    font-family: c;
     margin-bottom: 2.5rem;
-    color: #6b7280;
+    color: black;
 }
 
 .generator-steps {
@@ -126,17 +134,19 @@
 
 .generator-step h3 {
     margin-bottom: 0.75rem;
+    text-shadow: 2px 2px 4px goldenrod;
 }
 
 .generator-step p {
-    color: #6b7280;
+    font-family: c;
+    color: black;
 }
 
 /* ----- Call to action ----- */
 
 .about-cta {
     background-color: #18181b;
-    color: #ffffff;
+    color: #facc15;
     text-align: center;
 }
 
