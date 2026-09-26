@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Squat",
+        "type": "strength",
+        "level": "beginner",
+        "muscle": "Legs",
+        "image": "images/exercises/squat.gif",
+        "description": "Tränar främst ben och säte. Utförande: Stå med fötterna ungefär axelbrett. Böj knäna och sänk höfterna, res dig sedan upp igen med kontrollerad rörelse."
+    },
+    {
+        "name": "Chest Press",
+        "type": "strength",
+        "level": "beginner",
+        "muscle": "Chest",
+        "image": "images/exercises/chest-press.gif",
+        "description": "Tränar främst bröst, triceps och axlar. Utförande: Sitt stadigt och greppa handtagen. Pressa dem framåt tills armarna är nästan raka och återgå sedan kontrollerat."
+    },
+    {
+        "name": "Lat Pulldown",
+        "type": "strength",
+        "level": "beginner",
+        "muscle": "Back",
+        "image": "images/exercises/lat-pulldown.gif",
+        "description": "Tränar främst rygg och armar. Utförande: Sitt stadigt, greppa stången och dra den ner mot bröstet. Släpp sedan tillbaka stången kontrollerat."
+    },
+    {
+        "name": "Shoulder Press",
+        "type": "strength",
+        "level": "intermediate",
+        "muscle": "Shoulders",
+        "image": "images/exercises/shoulder-press.gif",
+        "description": "Tränar främst axlar och triceps. Utförande: Håll vikterna vid axlarna, pressa dem uppåt tills armarna är nästan raka och sänk sedan kontrollerat."
+    },
+    {
+        "name": "Cable Crunch",
+        "type": "strength",
+        "level": "intermediate",
+        "muscle": "Core",
+        "image": "images/exercises/cable-crunch.gif",
+        "description": "Tränar främst magmusklerna. Utförande: Stå eller knäböj framför kabelmaskinen, håll handtaget nära huvudet och böj överkroppen framåt. Återgå sedan kontrollerat."
+    },
+    {
+        "name": "Romanian Deadlift",
+        "type": "strength",
+        "level": "intermediate",
+        "muscle": "Legs",
+        "image": "images/exercises/romanian-deadlift.gif",
+        "description": "Tränar främst baksida lår, säte och rygg. Utförande: Håll vikten nära kroppen, böj lätt på knäna och fäll överkroppen framåt. Sänk vikten kontrollerat och res dig sedan upp igen."
+    },
+    {
+        "name": "Pull-Up",
+        "type": "strength",
+        "level": "advanced",
+        "muscle": "Back",
+        "image": "images/exercises/pull-up.gif",
+        "description": "En kroppsviktsövning för överkroppen. Tränar främst rygg, armar och axlar. Utförande: Greppa stången, dra kroppen uppåt tills hakan är över stången och sänk dig sedan kontrollerat."
+    },
+    {
+        "name": "Barbell Deadlift",
+        "type": "strength",
+        "level": "advanced",
+        "muscle": "Full Body",
+        "image": "images/exercises/barbell-deadlift.gif",
+        "description": "Tränar främst rygg, ben och säte. Utförande: Stå med fötterna ungefär höftbrett och håll stången framför kroppen. Böj knäna och fäll höften framåt. Lyft stången nära kroppen och res dig upp. Sänk sedan stången kontrollerat."
+    },
+    {
+        "name": "Treadmill",
+        "type": "cardio",
+        "level": "beginner",
+        "muscle": "Cardio",
+        "image": "images/exercises/treadmill.gif",
+        "description": "En konditionsövning på löpband. Tränar kondition, uthållighet och benmuskler."
+    },
+    {
+        "name": "Exercise Bike",
+        "type": "cardio",
+        "level": "beginner",
+        "muscle": "Lower Body",
+        "image": "images/exercises/exercise-bike.gif",
+        "description": "En skonsam konditionsövning för benen. Tränar kondition, uthållighet och benmuskler."
+    },
+    {
+        "name": "Walking",
+        "type": "cardio",
+        "level": "beginner",
+        "muscle": "Lower Body",
+        "image": "images/exercises/walking.gif",
+        "description": "En enkel och skonsam konditionsövning. Förbättrar kondition och stärker benmusklerna."
+    },
+    {
+        "name": "Rowing Machine",
+        "type": "cardio",
+        "level": "intermediate",
+        "muscle": "Full Body",
+        "image": "images/exercises/rowing-machine.gif",
+        "description": "En konditionsövning för hela kroppen. Tränar rygg, ben, armar och uthållighet."
+    },
+    {
+        "name": "Stair Climber",
+        "type": "cardio",
+        "level": "intermediate",
+        "muscle": "Lower Body",
+        "image": "images/exercises/stair-climber.gif",
+        "description": "En konditionsövning som efterliknar trappgång. Tränar främst ben, säte och kondition."
+    },
+    {
+        "name": "Elliptical",
+        "type": "cardio",
+        "level": "beginner",
+        "muscle": "Full Body",
+        "image": "images/exercises/elliptical.gif",
+        "description": "En skonsam konditionsövning för hela kroppen. Tränar kondition, ben och armar."
+    },
+    {
+        "name": "Running Intervals",
+        "type": "cardio",
+        "level": "advanced",
+        "muscle": "Cardio",
+        "image": "images/exercises/running-intervals.gif",
+        "description": "Tränar kondition, snabbhet och uthållighet. Växlar mellan snabb löpning och lugnare tempo."
+    }
+]

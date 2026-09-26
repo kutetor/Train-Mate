@@ -1,0 +1,179 @@
+/* ----- About hero ----- */
+
+.about-intro {
+    min-height: 300px;
+    display: flex;
+    align-items: center;    /* Centrerar innehållet vertikalt */
+    justify-content: center; /* Centrerar innehållet horisontellt */
+    background:
+        linear-gradient(    /* Skapar ett mörkt färgöverlägg */
+            rgba(0, 0, 0, 0.6), /* Svart färg med 60% genomskinlighet */
+            rgba(0, 0, 0, 0.6)  /* Samma färg på hela överlägget */
+        ),
+        url("../images/general/hero-about.png");  /* Hämtar bakgrundsbilden */
+    background-size: cover; /* Gör så att bilden täcker hela området */
+    background-position: center;
+    background-repeat: no-repeat;   /* Förhindrar att bilden upprepas */
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+.about-intro > div {
+    width: 100%;
+    max-width: 750px;
+}
+
+.about-intro h1 {
+    margin-bottom: 0.75rem; /* Skapar avstånd under rubriken */
+    font-size: 3rem;
+    color: goldenrod;
+    line-height: 1.2;   /* Anger radavståndet */
+    text-shadow: 2px 2px 4px black; /* Lägger en svart skugga bakom texten */
+}
+
+.about-intro p {
+    max-width: 650px;   /* Begränsar textens maximala bredd */
+    margin: 0 auto; /* Centrerar textstycket */
+    color: azure;
+    font-size: 1.1rem;  /* Anger textens storlek */
+}
+
+/* ----- Our purpose ----- */
+
+.about-purpose {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-purpose h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px goldenrod; /* Lägger en gyllene skugga */
+}
+
+.about-purpose p {
+    color: #303031;
+}
+
+/* ----- Features ----- */  /* Sektion för webbplatsens funktioner */
+
+.about-features {
+    background-color: #f8fafc;
+    text-align: center;
+}
+
+.about-features > h2 {  /* Väljer huvudrubriken i sektionen */
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px goldenrod;
+}
+
+.feature-cards {
+    max-width: 900px;   /* Begränsar kortens totala bredd */
+    margin: 0 auto;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.feature-card {
+    flex: 1;    /* Låter korten dela på tillgängligt utrymme */
+    padding: 2rem;  /* Skapar inre avstånd i kortet */
+    border: 1px solid #e5e7eb;  /* Lägger till en tunn ram */
+    border-top: 4px solid #facc15;  /* Lägger till en gul ram längst upp */
+    border-radius: 0.75rem; /* Rundar kortets hörn */
+    background-color: #ffffff;
+    text-align: left;   /* Vänsterjusterar texten */
+}
+
+.feature-card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 4px goldenrod;
+}
+
+.feature-card p {
+    margin-bottom: 1.5rem;
+    color: rgb(38, 38, 38);
+}
+
+/* Sektion för träningsgeneratorn */
+
+.generator-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.generator-info > h2 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px goldenrod;
+}
+
+.generator-info > p {
+    font-family: c;
+    margin-bottom: 2.5rem;
+    color: black;
+}
+
+.generator-steps {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.generator-step {
+    flex: 1;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.generator-step h3 {
+    margin-bottom: 0.75rem;
+    text-shadow: 2px 2px 4px goldenrod;
+}
+
+.generator-step p {
+    font-family: c;
+    color: black;
+}
+
+/* Sektion som uppmanar användaren till handling */
+
+.about-cta {
+    background-color: #18181b;
+    color: #facc15;
+    text-align: center;
+}
+
+.about-cta h2 {
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+}
+
+.about-cta p {
+    margin-bottom: 1.5rem;
+    color: #d4d4d8;
+}
+
+/* ----- Responsive design ----- */
+
+@media (max-width: 768px) {
+
+    .about-intro {  
+        min-height: 240px; /* Minskar sektionens minsta höjd */ 
+    }
+
+    .about-intro h1 {
+        font-size: 2.25rem; /* Gör rubriken mindre på små skärmar */
+    }
+
+    .feature-cards,
+    .generator-steps {  /* Väljer generatorns steg */
+        flex-direction: column; /* Staplar elementen ovanpå varandra */
+    }
+}

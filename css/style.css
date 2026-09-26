@@ -1,0 +1,172 @@
+/* ----- General styles ----- */
+
+* { /* Gäller alla HTML-element */
+    margin: 0;  /* Tar bort standardmarginal */
+    padding: 0;  /* Tar bort standard-padding */
+    box-sizing: border-box; /* Gör att padding och border räknas med i storleken */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;  /* Gör texten lutande */
+    line-height: 1.6;    /* Bestämmer avståndet mellan textrader */
+    color: #1f2937;
+    background-color: aliceblue;
+}
+
+a {
+    color: inherit; /* Använder samma färg som föräldraelementet */
+    text-decoration: none;  /* Tar bort understrykningen på länkar */
+}
+
+/* Primary button */
+.btn {
+    display: inline-block;  /* Gör elementet möjligt att styla som en knapp */
+    padding: 0.75rem 1.25rem;    /* Skapar utrymme inuti knappen */
+    border: none;   /* Tar bort knappens standardram */
+    border-radius: 0.5rem;  /* Gör knappens hörn rundade */
+    background-color: #facc15;
+    color: #111111;
+    font: inherit;   /* Använder samma typsnitt som resten av sidan */
+    font-weight: 700;   /* Gör texten fet */
+    cursor: pointer;    /* Visar en hand när muspekaren är över knappen */
+    transition: background-color 0.2s ease, transform 0.2s ease;  /* Gör förändringar mjukare */
+}
+
+.btn:hover {
+    background-color: #eab308;  /* Ändrar knappens färg vid hover */
+    transform: translateY(-1px);  /* Flyttar knappen lite uppåt */
+}
+
+/* Secondary button */
+.btn-secondary {
+    background-color: lightgoldenrodyellow; /* Ger knappen en ljusgul bakgrund */
+    color: black !important; /* Prioriterar att göra texten svart */
+    display: inline-block;  /* Gör elementet möjligt att styla som en knapp */
+    padding: 0.75rem 1.25rem;   /* Skapar utrymme inuti knappen */
+    border: 1px solid #111111;  /* Skapar en svart ram */
+    border-radius: 0.5rem;  /* Gör hörnen rundade */
+    font-weight: 600;   /* Gör texten lite fetare */
+    transition: background-color 0.2s ease, color 0.2s ease; /* Gör färgförändringen mjuk */
+}
+
+.btn-secondary:hover {
+    background-color: gold;
+    color: black;
+}
+
+
+/* ----- Navigation ----- */
+
+header {
+    border-bottom: 1px solid #27272a;   /* Skapar en tunn linje under headern */
+    background-color: #100f0f;
+}
+
+.navbar {
+    max-width: 1200px;   /* Begränsar navbarens maximala bredd */
+    margin: 0 auto;  /* Centrerar navbaren */
+    padding: 1rem 2rem;  /* Skapar utrymme runt innehållet */
+    display: flex;
+    align-items: center;  /* Centrerar elementen vertikalt */
+    justify-content: space-between; /* Skapar avstånd mellan elementen */
+    gap: 2rem;  /* Skapar mellanrum mellan elementen */
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; /* Förhindrar att logotypen krymper */
+}
+
+.logo img {
+    display: block;
+    width: 170px;
+    height: auto;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;  /* Skapar avstånd mellan länkarna */
+    list-style: none; /* Tar bort punkterna från listan */
+}
+
+.nav-links a {
+    color: #d4d4d8;
+    font-weight: 500; /*Tjockare text*/
+}
+
+.nav-links a:hover {
+    color: #facc15;
+}
+
+.nav-links a[aria-current="page"] { /*Det göratt den  sida du befinner dig på blir gul och fet.*/
+    color: #facc15;
+    font-weight: 700;
+}
+
+
+/* ----- Main content ----- */
+
+main {
+    min-height: 70vh;   /* Gör huvudinnehållet minst 70% av skärmens höjd */
+}
+
+section {
+    padding: 4rem 2rem; /* Skapar utrymme runt sektionens innehåll */
+}
+
+
+/* ----- Footer ----- */
+
+footer {
+    padding: 2rem;  /* Skapar utrymme inuti footern */
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /* Låter länkarna flytta till nästa rad */
+    gap: 1.5rem;  /* Skapar avstånd mellan länkarna */
+    margin-top: 1rem;  /* Skapar avstånd ovanför länkarna */
+}
+
+.footer-nav a {
+    color: #d4d4d8;
+}
+
+.footer-nav a:hover {
+    color: #facc15;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) { /* Anpassar sidan för skärmar som är högst 768px */
+
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 150px;  /* Gör logotypen mindre på små skärmar */
+    }
+
+    .nav-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section {
+        padding: 3rem 1.25rem;  /* Minskar sektionens padding på små skärmar */
+    }
+}

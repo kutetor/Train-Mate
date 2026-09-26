@@ -1,0 +1,218 @@
+/* Sektion för träningssidan */
+
+.hero {
+    min-height: 75vh;   /* Anger att sektionen ska vara minst 75% av skärmens höjd */
+    display: flex;
+    align-items: center ;
+    background: /* Skapar en bakgrund med överlägg och bild */
+        linear-gradient(    /* Skapar ett färgöverlägg över bilden */
+            90deg,  /* Gör gradienten horisontell från vänster till höger */
+            rgba(0, 0, 0, 0.92) 0%, /* Mörkt överlägg längst till vänster */
+            rgba(0, 0, 0, 0.75) 35%,    /* Något ljusare överlägg */
+            rgba(0, 0, 0, 0.25) 65%,    /* Mer genomskinligt överlägg */
+            rgba(0, 0, 0, 0.05) 100%    /* Nästan genomskinligt längst till höger */
+        ),
+        url("../images/general/hero-home.png"); /* Hämtar bakgrundsbilden */
+    background-size: cover; /* Gör så att bilden täcker hela området */
+    background-position: center;
+    background-repeat: no-repeat;   /* Förhindrar att bilden upprepas */
+}
+
+/* Sektionens textinnehåll */
+.hero-content {
+    width: 100%;    /* Använder hela tillgängliga bredden */
+    max-width: 650px;   /* Begränsar textens maximala bredd */
+    margin-left: max(2rem, calc((100% - 1200px) / 2));  /* Placerar texten med avstånd från vänster */  
+}
+
+.hero h1 {
+    margin-bottom: 1.5rem;  /* Skapar avstånd under rubriken */
+    color: goldenrod;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px black; /* Lägger en svart skugga bakom texten */
+}
+
+.hero p {
+    max-width: 600px;   /* Begränsar textens maximala bredd */
+    margin-bottom: 2rem;
+    color: goldenrod;
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Sektion för knapparna */ /* Hero actions */
+.hero-actions { /* Formaterar knappbehållaren */
+    display: flex;  
+    flex-wrap: wrap;    /* Gör att knapparna kan flytta till nästa rad */
+    gap: 1rem;  /* Skapar mellanrum mellan knapparna */
+}
+
+.hero .btn-secondary {
+    border-color: #facc15;  /* Ger knappen en gul ram */
+    color: #facc15;
+}
+
+.hero .btn-secondary:hover {
+    background-color: #facc15;
+    color: #111111;
+}
+
+
+/* Sektion som förklarar hur sidan fungerar */
+.how-it-works {
+    max-width: 1200px;  /* Begränsar sektionens maximala bredd */
+    margin: 0 auto; /* Centrerar sektionen */
+    text-align: center; 
+}
+
+.how-it-works > h2 {
+    font-family: c;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;    /* Anger rubrikens storlek */
+    text-shadow: 2px 2px 4px goldenrod; /* Lägger en gyllene skugga */
+}
+
+.how-it-works > p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 2.5rem;
+    color: black;
+}
+
+/* Sektion med steg */ /* Steps */
+.steps {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.step-card {
+    flex: 1;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem; /* Rundar kortets hörn */
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.step-card span {
+    display: inline-block;  /* Gör span till ett blockliknande element */
+    margin-bottom: 1rem;
+    color: #eab308;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px black;
+}
+
+.step-card h3 {
+    font-family: c;
+    margin-bottom: 0.75rem;
+    text-shadow: 2px 2px 4px goldenrod;
+}
+
+.step-card p {
+    font-family: c;
+    color: black;
+}
+
+
+/* Sektion för träningsmål *//* Training goals */
+
+.training-goals {
+    background-color: #f8fafc;
+    text-align: center;
+}
+
+.training-goals > h2 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px goldenrod;
+}
+
+.training-goals > p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 2.5rem;
+    color: black;
+}
+
+.goal-cards {
+    max-width: 900px;   /* Begränsar kortens totala bredd */
+    margin: 0 auto;
+    display: flex;
+    gap: 1.5rem;    /* Skapar mellanrum mellan korten */
+}
+
+.goal-card {
+    flex: 1;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    border-top: 4px solid #facc15;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.goal-card h3 {
+    margin-bottom: 0.75rem;
+    text-shadow: 2px 2px 4px goldenrod;
+}
+
+.goal-card p {
+    color: black;
+    font-family: c;
+}
+
+
+/* Sektion som uppmanar användaren att göra något */ /* Call to action */
+
+.home-cta {
+    background-color: #18181b;
+    color: #ffffff;
+    text-align: center;
+}
+
+.home-cta h2 {
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+}
+
+.home-cta p {
+    margin-bottom: 1.5rem;
+    color: #d4d4d8;
+}
+
+
+/* ----- Responsive design ----- */
+
+@media (max-width: 768px) { /* Gäller för skärmar som är högst 768 pixlar breda */
+
+    .hero {     /* Anpassar hero-sektionen för mindre skärmar */
+        min-height: 70vh;   /* Minskar sektionens minsta höjd */
+        padding-top: 5rem;  /* Skapar avstånd ovanför innehållet */
+        padding-bottom: 5rem;   /* Skapar avstånd under innehållet */
+        background-position: 65% center; /* Flyttar bakgrundsbildens position */
+    }
+
+    .hero-content {
+        margin-left: 0; /* Tar bort vänstermarginalen */
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;  /* Gör rubriken mindre */
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .steps,
+    .goal-cards {
+        flex-direction: column;
+    }
+}
